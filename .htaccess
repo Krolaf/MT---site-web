@@ -1,1 +1,9 @@
- 
+RewriteEngine On
+RewriteBase /
+
+# Ne pas rediriger si la requête est pour la page coming-soon.html ou son logo
+RewriteCond %{REQUEST_URI} !^/coming-soon\.html$
+RewriteCond %{REQUEST_URI} !^/MT_logo\.ico$
+
+# Rediriger toutes les autres requêtes vers la page coming-soon
+RewriteRule ^.*$ /coming-soon.html [L,R=302] 
