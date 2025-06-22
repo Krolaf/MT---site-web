@@ -21,7 +21,8 @@ class PostsManager {
     
     async loadPosts() {
         try {
-            const response = await fetch('posts.json');
+            const lang = localStorage.getItem('language') || 'fr';
+            const response = await fetch(`posts_${lang}.json`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -378,4 +379,67 @@ function setupSocialWidgets() {
             `;
         }, 1500);
     }
-} 
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const postsContainer = document.getElementById('posts-container');
+    
+    // S'assurer que nous sommes sur la page des posts
+    if (!postsContainer) {
+        return;
+    }
+
+    const loadPosts = async () => {
+        const lang = localStorage.getItem('language') || 'fr';
+        const loadingText = lang === 'fr' ? 'Chargement des posts...' : 'Loading posts...';
+        postsContainer.innerHTML = `<p>${loadingText}</p>`;
+        
+        try {
+            const response = await fetch(`posts_${lang}.json`);
+            if (!response.ok) {
+                throw new Error(`Impossible de charger posts_${lang}.json`);
+            }
+            const posts = await response.json();
+            displayPosts(posts, lang);
+        } catch (error) {
+            console.error('Erreur de chargement des posts:', error);
+            const errorText = lang === 'fr' ? 'Erreur de chargement des posts.' : 'Error loading posts.';
+            postsContainer.innerHTML = `<p>${errorText}</p>`;
+        }
+    };
+
+    const displayPosts = (posts, lang) => {
+        const noPostsText = lang === 'fr' ? 'Aucun post à afficher pour le moment.' : 'No posts to display at the moment.';
+        if (!posts || posts.length === 0) {
+            postsContainer.innerHTML = `<p>${noPostsText}</p>`;
+            return;
+        }
+
+        postsContainer.innerHTML = '';
+        posts.forEach(post => {
+            const postElement = document.createElement('div');
+            postElement.classList.add('post-card');
+
+            const postDate = new Date(post.date).toLocaleDateString(lang, {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            const publishText = lang === 'fr' ? 'Publié le' : 'Published on';
+
+            postElement.innerHTML = `
+                <h3 class="post-title">${post.title}</h3>
+                <p class="post-meta">${publishText} ${postDate}</p>
+                <div class="post-content">${post.content}</div>
+            `;
+            postsContainer.appendChild(postElement);
+        });
+    };
+
+    // Écouter l'événement personnalisé envoyé par translation.js
+    document.addEventListener('languageChanged', loadPosts);
+
+    // Chargement initial
+    loadPosts();
+}); 

@@ -32,9 +32,13 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Accueil</a></li>
                 <li><a href="about.html" class="nav-link">À propos</a></li>
-                <li><a href="posts.html" class="nav-link active">Posts</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="posts.html" class="nav-link active" data-translate="nav_posts">Posts</a></li>
+                <li><a href="contact.html" class="nav-link" data-translate="nav_contact">Contact</a></li>
             </ul>
+            <div class="language-selector">
+                <img src="https://flagcdn.com/fr.svg" alt="Français" data-lang="fr" class="lang-flag">
+                <img src="https://flagcdn.com/gb.svg" alt="English" data-lang="en" class="lang-flag">
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -86,7 +90,7 @@
     <!-- Posts Section -->
     <section class="posts-section">
         <div class="container">
-            <h2 class="section-title">Derniers posts</h2>
+            <h2 class="section-title" data-translate="posts_title">Dernières nouvelles</h2>
             <div class="posts-grid" id="posts-container">
                 <!-- Les posts seront chargés dynamiquement via JavaScript -->
                 <div class="loading">Chargement des posts...</div>
@@ -118,8 +122,9 @@
                     <h4>Liens rapides</h4>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">À propos</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html" data-translate="nav_about">À propos</a></li>
+                        <li><a href="posts.html" data-translate="nav_posts">Posts</a></li>
+                        <li><a href="contact.html" data-translate="nav_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -133,12 +138,13 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Médiéval Tower. Tous droits réservés.</p>
+                <p data-translate="footer_copyright">&copy; 2024 Médiéval Tower. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/global.js"></script>
     <script src="js/posts.js"></script>
+    <script src="js/translation.js"></script>
 </body>
 </html> 

@@ -410,4 +410,42 @@ a:hover {
         width: 100%;
         margin-bottom: var(--spacing-sm);
     }
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+/* Language Selector */
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: 1rem;
+}
+
+.lang-flag {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    opacity: 0.6;
+}
+
+.lang-flag.active {
+    border-color: var(--primary-color);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.lang-flag:not(.active):hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--background-color-light);
 } 

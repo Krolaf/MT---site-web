@@ -32,9 +32,13 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Accueil</a></li>
                 <li><a href="about.html" class="nav-link">À propos</a></li>
-                <li><a href="posts.html" class="nav-link">Posts</a></li>
-                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="posts.html" class="nav-link" data-translate="nav_posts">Posts</a></li>
+                <li><a href="contact.html" class="nav-link active" data-translate="nav_contact">Contact</a></li>
             </ul>
+            <div class="language-selector">
+                <img src="https://flagcdn.com/fr.svg" alt="Français" data-lang="fr" class="lang-flag">
+                <img src="https://flagcdn.com/gb.svg" alt="English" data-lang="en" class="lang-flag">
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -54,18 +58,19 @@
     <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
+            <h2 class="section-title" data-translate="contact_title">Contactez-nous</h2>
+            <p data-translate="contact_desc">Une question, une suggestion ou simplement envie de nous laisser un message ? Remplissez le formulaire ci-dessous.</p>
             <div class="contact-content">
                 <!-- Contact Form -->
                 <div class="contact-form-container">
-                    <h2>Envoyez-nous un message</h2>
                     <form class="contact-form" id="contact-form">
                         <div class="form-group">
-                            <label for="name">Nom complet *</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="name" data-translate="contact_label_name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required data-translate="contact_placeholder_name">
                         </div>
                         <div class="form-group">
-                            <label for="email">Adresse email *</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="email" data-translate="contact_label_email">Adresse email *</label>
+                            <input type="email" id="email" name="email" required data-translate="contact_placeholder_email">
                         </div>
                         <div class="form-group">
                             <label for="subject">Sujet</label>
@@ -79,10 +84,10 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
+                            <label for="message" data-translate="contact_label_message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Votre message..." data-translate="contact_placeholder_message"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                        <button type="submit" class="btn btn-primary" data-translate="contact_send_btn">Envoyer le message</button>
                     </form>
                 </div>
 
@@ -165,8 +170,9 @@
                     <h4>Liens rapides</h4>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">À propos</a></li>
-                        <li><a href="posts.html">Posts</a></li>
+                        <li><a href="about.html" data-translate="nav_about">À propos</a></li>
+                        <li><a href="posts.html" data-translate="nav_posts">Posts</a></li>
+                        <li><a href="contact.html" data-translate="nav_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -180,12 +186,13 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Médiéval Tower. Tous droits réservés.</p>
+                <p data-translate="footer_copyright">&copy; 2024 Médiéval Tower. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/global.js"></script>
     <script src="js/contact-php.js"></script>
+    <script src="js/translation.js"></script>
 </body>
 </html> 

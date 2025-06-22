@@ -32,9 +32,13 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link active">Accueil</a></li>
                 <li><a href="about.html" class="nav-link">À propos</a></li>
-                <li><a href="posts.html" class="nav-link">Posts</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="posts.html" class="nav-link" data-translate="nav_posts">Posts</a></li>
+                <li><a href="contact.html" class="nav-link" data-translate="nav_contact">Contact</a></li>
             </ul>
+            <div class="language-selector">
+                <img src="https://flagcdn.com/fr.svg" alt="Français" data-lang="fr" class="lang-flag">
+                <img src="https://flagcdn.com/gb.svg" alt="English" data-lang="en" class="lang-flag">
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -46,15 +50,15 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Médiéval Tower</h1>
-            <p class="hero-subtitle">RPG / Simulation / Gestion</p>
-            <p class="hero-description">
+            <h1 class="hero-title" data-translate="hero_title">Médiéval Tower</h1>
+            <p class="hero-subtitle" data-translate="hero_subtitle">RPG / Simulation / Gestion</p>
+            <p class="hero-description" data-translate="hero_description">
                 Médiéval Tower est un RPG / Simulation / Gestion où le joueur explore une tour infinie, 
                 chaque étage étant un monde unique. Liberté, effort et immersion sont au cœur du gameplay.
             </p>
             <div class="hero-buttons">
-                <a href="https://discord.gg/vxWWrrFn" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Rejoindre le Discord</a>
-                <a href="about.html" class="btn btn-secondary">En savoir plus</a>
+                <a href="https://discord.gg/vxWWrrFn" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-translate="hero_discord_btn">Rejoindre le Discord</a>
+                <a href="about.html" class="btn btn-secondary" data-translate="hero_about_btn">En savoir plus</a>
             </div>
         </div>
         <div class="hero-image">
@@ -71,31 +75,31 @@
     <!-- Features Section -->
     <section class="features">
         <div class="container">
-            <h2 class="section-title">Caractéristiques du jeu</h2>
+            <h2 class="section-title" data-translate="features_title">Caractéristiques du jeu</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <!-- À compléter : icône exploration -->
                         <div class="placeholder-icon">🗺️</div>
                     </div>
-                    <h3>Exploration infinie</h3>
-                    <p>Découvrez une tour aux étages infinis, chacun offrant un monde unique à explorer.</p>
+                    <h3 data-translate="feature_explore_title">Exploration infinie</h3>
+                    <p data-translate="feature_explore_desc">Découvrez une tour aux étages infinis, chacun offrant un monde unique à explorer.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <!-- À compléter : icône RPG -->
                         <div class="placeholder-icon">⚔️</div>
                     </div>
-                    <h3>RPG immersif</h3>
-                    <p>Créez votre personnage, développez vos compétences et forgez votre destin.</p>
+                    <h3 data-translate="feature_rpg_title">RPG immersif</h3>
+                    <p data-translate="feature_rpg_desc">Créez votre personnage, développez vos compétences et forgez votre destin.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <!-- À compléter : icône gestion -->
                         <div class="placeholder-icon">🏰</div>
                     </div>
-                    <h3>Gestion stratégique</h3>
-                    <p>Gérez vos ressources, construisez votre base et planifiez vos expéditions.</p>
+                    <h3 data-translate="feature_management_title">Gestion stratégique</h3>
+                    <p data-translate="feature_management_desc">Gérez vos ressources, construisez votre base et planifiez vos expéditions.</p>
                 </div>
             </div>
         </div>
@@ -104,24 +108,24 @@
     <!-- Screenshots Section -->
     <section class="screenshots">
         <div class="container">
-            <h2 class="section-title">Aperçu du jeu</h2>
+            <h2 class="section-title" data-translate="screenshots_title">Aperçu du jeu</h2>
             <div class="screenshots-grid">
                 <div class="screenshot-item">
                     <!-- À compléter : screenshot 1 -->
                     <div class="placeholder-screenshot">
-                        <span>Screenshot 1 - Interface principale</span>
+                        <span data-translate="screenshot1_desc">Screenshot 1 - Interface principale</span>
                     </div>
                 </div>
                 <div class="screenshot-item">
                     <!-- À compléter : screenshot 2 -->
                     <div class="placeholder-screenshot">
-                        <span>Screenshot 2 - Combat</span>
+                        <span data-translate="screenshot2_desc">Screenshot 2 - Combat</span>
                     </div>
                 </div>
                 <div class="screenshot-item">
                     <!-- À compléter : screenshot 3 -->
                     <div class="placeholder-screenshot">
-                        <span>Screenshot 3 - Gestion</span>
+                        <span data-translate="screenshot3_desc">Screenshot 3 - Gestion</span>
                     </div>
                 </div>
             </div>
@@ -131,9 +135,9 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2>Prêt à rejoindre l'aventure ?</h2>
-            <p>Rejoignez notre communauté Discord pour suivre le développement et échanger avec d'autres joueurs.</p>
-            <a href="https://discord.gg/vxWWrrFn" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Rejoindre le Discord</a>
+            <h2 data-translate="cta_title">Prêt à rejoindre l'aventure ?</h2>
+            <p data-translate="cta_desc">Rejoignez notre communauté Discord pour suivre le développement et échanger avec d'autres joueurs.</p>
+            <a href="https://discord.gg/vxWWrrFn" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer" data-translate="cta_discord_btn">Rejoindre le Discord</a>
         </div>
     </section>
 
@@ -142,19 +146,19 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Médiéval Tower</h3>
-                    <p>Un RPG immersif dans une tour infinie</p>
+                    <h3 data-translate="footer_title">Médiéval Tower</h3>
+                    <p data-translate="footer_subtitle">Un RPG immersif dans une tour infinie</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Liens rapides</h4>
+                    <h4 data-translate="footer_links_title">Liens rapides</h4>
                     <ul>
-                        <li><a href="about.html">À propos</a></li>
-                        <li><a href="posts.html">Posts</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html" data-translate="nav_about">À propos</a></li>
+                        <li><a href="posts.html" data-translate="nav_posts">Posts</a></li>
+                        <li><a href="contact.html" data-translate="nav_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Réseaux sociaux</h4>
+                    <h4 data-translate="footer_socials_title">Réseaux sociaux</h4>
                     <div class="social-links">
                         <a href="https://discord.gg/vxWWrrFn" class="social-link" target="_blank" rel="noopener noreferrer">Discord</a>
                         <a href="https://x.com/Medieval_tower" class="social-link" target="_blank" rel="noopener noreferrer">X / Twitter</a>
@@ -164,11 +168,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Médiéval Tower. Tous droits réservés.</p>
+                <p data-translate="footer_copyright">&copy; 2024 Médiéval Tower. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/global.js"></script>
+    <script src="js/translation.js"></script>
 </body>
 </html> 
