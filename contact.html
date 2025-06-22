@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Médiéval Tower</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Médiéval Tower</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="posts.html" class="nav-link">Posts</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Une question ? Une suggestion ? N'hésitez pas à nous contacter !</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Envoyez-nous un message</h2>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <select id="subject" name="subject">
+                                <option value="">Choisissez un sujet</option>
+                                <option value="question">Question générale</option>
+                                <option value="feedback">Retour d'expérience</option>
+                                <option value="bug">Signalement de bug</option>
+                                <option value="suggestion">Suggestion</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Autres moyens de nous contacter</h2>
+                    
+                    <!-- Discord -->
+                    <div class="contact-method">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Discord</h3>
+                            <p>Rejoignez notre serveur Discord pour échanger avec la communauté</p>
+                            <a href="https://discord.gg/vxWWrrFn" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Rejoindre Discord</a>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="contact-method">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-details">
+                            <h3>Réseaux sociaux</h3>
+                            <p>Suivez-nous sur nos réseaux sociaux</p>
+                            <div class="social-buttons">
+                                <a href="https://x.com/Medieval_tower" class="social-btn twitter" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+                                <a href="https://www.instagram.com/medievaltower/" class="social-btn instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+                                <a href="https://www.linkedin.com/company/médiéval-tower/about/?viewAsMember=true" class="social-btn linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-method">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>Pour les demandes professionnelles</p>
+                            <a href="mailto:contact@medievaltower.com" class="email-link">contact@medievaltower.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Questions fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Quand sortira le jeu ?</h3>
+                    <p>Le développement est en cours. Nous prévoyons une sortie en 2025. Suivez nos réseaux sociaux pour les dernières actualités.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Sur quelles plateformes sera disponible le jeu ?</h3>
+                    <p>Médiéval Tower sera disponible sur PC (Windows, Mac, Linux) dans un premier temps.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Comment puis-je participer aux tests ?</h3>
+                    <p>Rejoignez notre serveur Discord pour être informé des opportunités de test et de feedback.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Le jeu sera-t-il gratuit ?</h3>
+                    <p>Le modèle économique n'est pas encore défini. Nous privilégions la qualité du jeu avant tout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Médiéval Tower</h3>
+                    <p>Un RPG immersif dans une tour infinie</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="posts.html">Posts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Réseaux sociaux</h4>
+                    <div class="social-links">
+                        <a href="https://discord.gg/vxWWrrFn" class="social-link" target="_blank" rel="noopener noreferrer">Discord</a>
+                        <a href="https://x.com/Medieval_tower" class="social-link" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+                        <a href="https://www.instagram.com/medievaltower/" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://www.linkedin.com/company/médiéval-tower/about/?viewAsMember=true" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Médiéval Tower. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/global.js"></script>
+    <script src="js/contact-php.js"></script>
+</body>
+</html> 

@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "Nouveau système de combat",
+        "excerpt": "Nous avons complètement revu le système de combat pour le rendre plus fluide et stratégique. Les joueurs peuvent maintenant combiner différentes attaques et utiliser des compétences spéciales uniques à chaque classe de personnage.",
+        "image": "combat-system.jpg",
+        "link": "https://example.com/combat-system",
+        "date": "2024-01-15",
+        "category": "Gameplay",
+        "author": "Équipe Médiéval Tower",
+        "readTime": "5 min"
+    },
+    {
+        "id": 2,
+        "title": "Étage 50 : Le Royaume de Glace",
+        "excerpt": "Explorez le mystérieux 50ème étage de la tour, un monde glacé rempli de créatures légendaires et de trésors cachés. Cet étage introduit de nouvelles mécaniques de survie et des boss épiques.",
+        "image": "ice-kingdom.jpg",
+        "link": "https://example.com/ice-kingdom",
+        "date": "2024-01-10",
+        "category": "Contenu",
+        "author": "Équipe Médiéval Tower",
+        "readTime": "8 min"
+    },
+    {
+        "id": 3,
+        "title": "Mise à jour de l'interface utilisateur",
+        "excerpt": "L'interface utilisateur a été modernisée pour une meilleure expérience de jeu. Plus intuitif, plus beau et plus accessible sur tous les appareils. Découvrez les nouvelles fonctionnalités !",
+        "image": "ui-update.jpg",
+        "link": "https://example.com/ui-update",
+        "date": "2024-01-05",
+        "category": "Interface",
+        "author": "Équipe Médiéval Tower",
+        "readTime": "4 min"
+    },
+    {
+        "id": 4,
+        "title": "Système de guildes et coopération",
+        "excerpt": "Formez des guildes avec d'autres joueurs et explorez ensemble les étages les plus difficiles. Le système de coopération permet de partager les récompenses et de progresser plus efficacement.",
+        "image": "guild-system.jpg",
+        "link": "https://example.com/guild-system",
+        "date": "2023-12-28",
+        "category": "Social",
+        "author": "Équipe Médiéval Tower",
+        "readTime": "6 min"
+    },
+    {
+        "id": 5,
+        "title": "Nouvelles classes de personnages",
+        "excerpt": "Trois nouvelles classes font leur apparition : l'Invocateur, le Gardien et l'Assassin. Chaque classe apporte un style de jeu unique et des capacités spéciales qui changent complètement l'approche du combat.",
+        "image": "new-classes.jpg",
+        "link": "https://example.com/new-classes",
+        "date": "2023-12-20",
+        "category": "Gameplay",
+        "author": "Équipe Médiéval Tower",
+        "readTime": "7 min"
+    },
+    {
+        "id": 6,
+        "title": "Événement spécial : La Nuit des Légendes",
+        "excerpt": "Un événement limité de 48h où les joueurs peuvent affronter des boss légendaires et obtenir des récompenses exclusives. Ne manquez pas cette opportunité unique !",
+        "image": "legendary-night.jpg",
+        "link": "https://example.com/legendary-night",
+        "date": "2023-12-15",
+        "category": "Événement",
+        "author": "Équipe Médiéval Tower",
+        "readTime": "3 min"
+    }
+] 
